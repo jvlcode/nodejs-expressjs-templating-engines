@@ -1,0 +1,22 @@
+extends layouts/main.pug
+
+block content
+    header(class="bg-primary bg-gradient text-white")
+        div(class="container px-4 text-center")
+            h1(class="fw-bolder") Welcome to Node.js Template Engines
+            a(class="btn btn-lg btn-light" href="#about") This is Pug
+
+    section(id="about")
+        div(class="container px-4")
+            div(class="row gx-4 justify-content-center")
+                div(class="col-lg-8")
+                    h2 Courses
+                    if courses.length > 0
+                        ul 
+                            each course in courses
+                                li #{course}
+                    else 
+                        p(class="lead") No courses available
+
+        
+

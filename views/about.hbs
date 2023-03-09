@@ -1,0 +1,17 @@
+ <section id="page">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>My name is Logesh. I will teach you the follwing courses</h2>
+                {{#if courseExists}}   
+                    {{#each courses}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                {{else}}
+                    <p class="lead">No courses available</p>
+                {{/if}}
+                
+            </div>
+        </div>
+    </div>
+</section>

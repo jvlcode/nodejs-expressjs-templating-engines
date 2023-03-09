@@ -1,0 +1,11 @@
+#page {
+    padding:280px;
+    color: red;
+}
+#page h1{
+    font-size: 400%;
+}
+
+#page p {
+    text-align: center;
+}

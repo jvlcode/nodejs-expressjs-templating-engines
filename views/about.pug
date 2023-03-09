@@ -1,0 +1,18 @@
+
+extends layouts/main.pug
+
+block styles
+    link(href="css/about.css" rel="stylesheet")
+
+block content
+    section(id="page")
+        div(class="container px-4")
+            div(class="row gx-4 justify-content-center")
+                div(class="col-lg-8")
+                    h2 My name is Logesh. I will teach you the follwing courses
+                    if courses.length > 0
+                        ul 
+                            each course in courses
+                                li #{course}
+                    else 
+                        p(class="lead") No courses available
